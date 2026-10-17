@@ -1,0 +1,162 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f7fbfd"><meta name="description" content="Персональный сайт врача-стоматолога: информация о приёме, услугах и запись на консультацию."><title>CLEAR — медицинский | Сайт стоматолога</title><style>
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:92px}
+body{margin:0;min-width:320px;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}button,input,select{font:inherit}button{cursor:pointer}img,svg{max-width:100%}[hidden]{display:none!important}
+:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+.container{width:min(1220px,calc(100% - 88px));margin:auto}
+header{position:sticky;top:0;z-index:100;backdrop-filter:blur(22px)}
+.nav-bar{height:86px;display:flex;justify-content:space-between;align-items:center;gap:25px}
+.brand{display:inline-flex;align-items:center;gap:12px;line-height:1.2;white-space:nowrap}.brand strong{display:block;font-size:19px;letter-spacing:-.06em}.brand small{display:block;font-size:10px;letter-spacing:.12em;text-transform:uppercase;margin-top:5px}
+.desktop-nav{display:flex;align-items:center;gap:32px;font-size:13px}.desktop-nav a:hover{text-decoration:underline;text-underline-offset:6px}
+.top-link{display:inline-flex;align-items:center;justify-content:center;gap:8px;white-space:nowrap;font-weight:700;font-size:12px;padding:14px 22px;transition:transform .18s}.top-link:hover,.button:hover{transform:translateY(-2px)}
+.menu-button{display:none;align-items:center;justify-content:center;border:1px solid currentColor;border-radius:12px;width:44px;height:44px;background:transparent;color:inherit}
+.menu-button svg{width:23px;height:23px}.mobile-nav{display:none}
+.kicker{display:inline-flex;align-items:center;gap:12px;font-size:11px;font-weight:800;letter-spacing:.17em;text-transform:uppercase}
+.kicker:before{content:'';display:block;width:27px;height:1px;background:currentColor;opacity:.7}
+h1,h2,h3,p{margin-top:0}h1{font-weight:700;line-height:1.09}h2{font-weight:600;line-height:1.12;letter-spacing:-.055em}
+.button{min-height:52px;display:inline-flex;justify-content:center;align-items:center;gap:13px;padding:15px 23px;font-weight:700;font-size:13px;border:0;transition:transform .18s,background .18s}.button .arrow{font-size:19px;line-height:1}
+.section{padding:106px 0}.section-intro{display:flex;align-items:end;justify-content:space-between;gap:35px;margin-bottom:46px}.section-intro h2{font-size:clamp(35px,4.2vw,55px);margin:13px 0 0}.section-intro p{font-size:14px;max-width:350px;line-height:1.75;opacity:.75;margin:0}
+.photo-upload{position:relative;overflow:hidden}.photo-upload img{display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:4}
+.contact-info{display:grid;gap:14px}.contact-info a,.contact-info span{font-size:14px;display:block}.contact-info strong{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.13em;margin-bottom:6px;opacity:.65}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.form-field{display:flex;flex-direction:column;gap:8px}.form-field.full{grid-column:1/-1}.form-field label{font-size:11px;font-weight:800;letter-spacing:.04em}
+.form-field input,.form-field select{width:100%;min-width:0;min-height:54px;border:1px solid var(--input-border);background:var(--input-bg);border-radius:var(--input-radius);color:var(--ink);padding:15px 16px;outline:none}
+.form-field input:focus,.form-field select:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--focus-ring)}
+.privacy{display:flex;align-items:flex-start;gap:10px;font-size:11px;line-height:1.5;opacity:.75;margin:18px 0}.privacy input{margin:3px 0 0;accent-color:var(--accent);width:15px;height:15px;flex-shrink:0}
+.demo-result{margin-top:18px;border:1px dashed var(--accent);padding:17px;border-radius:12px;white-space:pre-wrap;font-size:12px;line-height:1.65;overflow-wrap:anywhere;display:none}.demo-result.show{display:block}.demo-result button{display:block;margin-top:12px;border:0;background:transparent;color:inherit;text-decoration:underline;font-weight:800;padding:0;cursor:pointer}
+.demo-note{font-size:11px;line-height:1.6;opacity:.62;margin-top:14px}
+footer .foot-row{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:28px 0;font-size:12px;opacity:.75}
+footer .foot-row nav{display:flex;gap:22px}
+@media(max-width:1000px){.container{width:min(100% - 52px,820px)}.desktop-nav,.nav-bar>.top-link{display:none}.menu-button{display:flex}.mobile-nav{position:absolute;inset:100% 0 auto;display:none;flex-direction:column;padding:16px 26px 26px;box-shadow:0 16px 38px #121a1b1c;gap:5px;background:var(--nav-mobile-bg)}.mobile-nav.is-open{display:flex}.mobile-nav a{padding:12px 8px;font-weight:700;font-size:14px}.mobile-nav .top-link{margin-top:8px}.nav-bar{height:72px}.section{padding:82px 0}}
+@media(max-width:640px){.container{width:calc(100% - 36px)}.section{padding:68px 0}.section-intro{display:block;margin-bottom:30px}.section-intro p{margin-top:17px}.section-intro h2{font-size:37px}.form-grid{grid-template-columns:1fr}.form-field.full{grid-column:auto}.foot-row{align-items:flex-start!important;flex-direction:column}.foot-row nav{flex-wrap:wrap}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+
+
+:root{--ink:#183449;--accent:#2097b6;--focus-ring:#c6e8f2;--input-border:#d3e4ee;--input-bg:#fff;--input-radius:13px;--nav-mobile-bg:#f5fbff}
+body{background:#f7fbfd;color:var(--ink);font-family:Arial,"Segoe UI",sans-serif;font-size:14px;line-height:1.65}
+header{background:#ffffffec;border-bottom:1px solid #e8f1f5}.brand-logo{width:41px;height:41px;border-radius:13px;background:#178ead;color:white;display:grid;place-items:center;font-size:29px;font-weight:400}.brand small{color:#68909e}
+.desktop-nav{color:#58717f}.top-link{border-radius:10px;background:#167e9c;color:white}.top-link:hover{background:#096b88}
+.hero{background:radial-gradient(circle at 81% 37%,#ccebf6 0%,transparent 32%),linear-gradient(120deg,#f7fcff 12%,#edf7fc 100%);overflow:hidden}
+.hero-layout{min-height:650px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:55px;padding:56px 0 76px}
+.hero h1{font-size:clamp(51px,5.1vw,75px);letter-spacing:-.07em;margin:24px 0}.hero h1 span{color:#168cab}.hero-text{max-width:460px;color:#5d7887;font-size:15px;line-height:1.85;margin:0 0 31px}
+.hero-buttons{display:flex;gap:12px;flex-wrap:wrap}.primary{background:#187e9d;color:#fff;border-radius:11px}.secondary{background:#fff;color:#305b6c;border:1px solid #d8eaf2;border-radius:11px}
+.hero-note{margin-top:34px;color:#65828e;display:flex;align-items:center;gap:10px;font-size:12px}.hero-note b{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:#d9eff5;color:#177c98}
+.hero-stage{height:555px;position:relative;display:grid;place-items:center}.hero-circle{height:490px;width:490px;max-width:100%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 33% 23%,#fff 0%,#d3eef8 41%,#8dd2e6 100%);box-shadow:inset 0 0 0 25px #ffffff4b,0 28px 65px #80bfd84d;display:grid;place-items:center;position:relative}
+.hero-circle:before{content:'';position:absolute;inset:30px;border:1px solid #ffffffa3;border-radius:50%}.tooth-svg{width:340px;position:relative;z-index:2;filter:drop-shadow(0 22px 17px #478eaa36);transform:rotate(-7deg)}
+.floating{position:absolute;background:white;border:1px solid #e5f0f4;box-shadow:0 12px 42px #0a68811d;border-radius:13px;padding:16px 19px;font-size:12px;line-height:1.45;z-index:3}.floating small{display:block;color:#7f9da9;margin-top:5px}.floating.one{right:-25px;top:85px}.floating.two{left:-36px;bottom:100px}.mini-check{display:inline-flex;align-items:center;justify-content:center;width:23px;height:23px;border-radius:8px;color:#087f98;background:#d9eff5;margin-right:7px}
+.trust-ribbon{background:#fff;border-top:1px solid #e3eff4;border-bottom:1px solid #e3eff4}.trust-layout{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.trust-item{padding:26px 25px;display:flex;align-items:center;gap:15px;border-right:1px solid #e7eff4}.trust-item:last-child{border:0}.trust-item .symbol{width:38px;height:38px;background:#edf8fb;border-radius:11px;display:grid;place-items:center;color:#1188a5;font-size:22px}.trust-item strong{display:block;font-size:13px}.trust-item span{font-size:11px;color:#7a95a2}
+.blue-kicker{color:#178cab}.section-intro p{color:#637d8d}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.service{border:1px solid #e0edf3;background:#fff;border-radius:17px;padding:29px;min-height:223px;transition:transform .2s,box-shadow .2s}.service:hover{transform:translateY(-4px);box-shadow:0 14px 35px #246d8620}.service-number{display:inline-flex;width:41px;height:41px;align-items:center;justify-content:center;background:#e9f6fa;border-radius:10px;color:#1286a5;font-weight:800;font-size:14px;margin-bottom:29px}.service h3{font-size:18px;letter-spacing:-.035em;margin-bottom:10px}.service p{color:#78919b;font-size:12px;line-height:1.75;margin:0}
+.about-block{background:#eaf5fa}.about-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:75px;align-items:center}.about-art{height:445px;position:relative;background:linear-gradient(145deg,#c7e7f2,#e6f5fa);border-radius:24px;display:flex;justify-content:center;align-items:center;overflow:hidden}.about-art:before{content:'';border:1px solid #ffffffbc;width:370px;height:370px;border-radius:50%;position:absolute}.about-art .tooth-svg{width:230px;opacity:.58;transform:rotate(15deg)}.about-caption{position:absolute;bottom:25px;left:25px;right:25px;background:#ffffffd9;padding:13px 16px;border-radius:10px;font-size:12px;color:#54727f;z-index:6}
+.about-text h2{font-size:clamp(36px,3.7vw,53px);margin:17px 0 18px}.about-text>p{color:#64808f;line-height:1.95;max-width:550px}.about-name{font-size:21px;font-weight:700;letter-spacing:-.03em;margin:20px 0 4px}.about-specialty{font-size:12px;color:#168cac;font-weight:700}.about-list{display:grid;gap:12px;margin-top:26px}.about-list div{background:#ffffffa8;border:1px solid #daeaf1;border-radius:11px;padding:13px 17px;font-size:13px}
+.approach-list{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}.step{border-top:2px solid #c0dce7;padding-top:20px}.step .count{font-size:12px;font-weight:900;color:#1382a0}.step h3{font-size:18px;margin:19px 0 9px}.step p{color:#738a96;font-size:13px;line-height:1.8}
+.contact{background:#153b4e;color:#fff}.contact-grid{display:grid;grid-template-columns:.88fr 1.12fr;gap:95px;align-items:start}.contact h2{font-size:clamp(39px,4.7vw,65px);margin:20px 0;letter-spacing:-.06em}.contact p{color:#bad3dd;font-size:14px;line-height:1.85}.contact-info{margin-top:40px}.contact-info span,.contact-info a{color:white}.contact-form{background:#fff;color:#21485b;border-radius:20px;padding:35px}.contact-form h3{font-size:23px;letter-spacing:-.04em;margin-bottom:22px}.contact-form .demo-note{color:#587584}.contact-form .privacy{color:#496978}.send-button{background:#198ca8;color:#fff;border-radius:10px;width:100%}
+footer{background:#0c2b3c;color:white}
+@media(max-width:1100px){.hero-stage{height:460px}.hero-circle{width:420px;height:420px}.floating.one{right:0}.floating.two{left:0}}
+@media(max-width:900px){.hero-layout{grid-template-columns:1fr;gap:10px;padding:61px 0}.hero-stage{height:465px;max-width:590px;width:100%;justify-self:center}.about-grid,.contact-grid{grid-template-columns:1fr;gap:40px}.about-art{height:355px}.service-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.hero-layout{padding:44px 0 36px}.hero h1{font-size:clamp(45px,10.1vw,59px)}.hero-text{font-size:13px}.hero-stage{height:346px}.hero-circle{width:310px;height:310px}.tooth-svg{width:245px}.floating{padding:10px 12px;font-size:10px}.floating.one{right:-5px;top:40px}.floating.two{left:-5px;bottom:34px}.trust-layout{grid-template-columns:1fr}.trust-item{padding:16px 0;border-bottom:1px solid #e7eff4;border-right:0}.service-grid,.approach-list{grid-template-columns:1fr}.service{min-height:0}.about-art{height:330px}.contact-form{padding:24px 19px}.contact h2{font-size:40px}}
+</style></head><body>
+<header><div class="container nav-bar"><a class="brand" href="#top"><span class="brand-logo" aria-hidden="true">✳</span><span><strong>FORMA <span style="font-weight:400">dental</span></strong><small>Персональный сайт врача</small></span></a><nav class="desktop-nav" aria-label="Главная навигация"><a href="#about">О враче</a><a href="#services">Услуги</a><a href="#approach">Как проходит приём</a></nav><a class="top-link" href="#contact">Записаться <span aria-hidden="true">↗</span></a><button class="menu-button" id="menu-button" type="button" aria-label="Открыть меню" aria-controls="mobile-nav" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button></div><nav class="mobile-nav" id="mobile-nav" aria-label="Мобильная навигация"><a href="#about">О враче</a><a href="#services">Услуги</a><a href="#approach">Подход</a><a href="#contact" class="top-link">Записаться ↗</a></nav></header>
+<main id="top">
+<section class="hero"><div class="container hero-layout"><div class="hero-copy"><div class="kicker blue-kicker">Стоматология с вниманием к деталям</div><h1>Здоровая улыбка начинается с <span>доверия.</span></h1><p class="hero-text">Спокойный разговор, понятный план лечения и внимание к вашим вопросам. Познакомьтесь с врачом и выберите удобный способ связи.</p><div class="hero-buttons"><a class="button primary" href="#contact">Записаться на консультацию <span class="arrow">↗</span></a><a class="button secondary" href="#about">Познакомиться с врачом</a></div><div class="hero-note"><b>✓</b> Вы сами выбираете комфортный способ обращения</div></div><div class="hero-stage"><div class="hero-circle"><svg class="tooth-svg" viewBox="0 0 480 520" role="img" aria-label="Декоративная иллюстрация зуба" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="toothFace" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fff"/><stop offset=".45" stop-color="#e9f8ff"/><stop offset="1" stop-color="#b9dfea"/></linearGradient><linearGradient id="shine" x1="0" x2="1"><stop stop-color="#ffffff" stop-opacity=".95"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></linearGradient><filter id="blurshadow"><feGaussianBlur stdDeviation="15"/></filter></defs>
+<ellipse cx="248" cy="464" rx="139" ry="19" fill="#226c91" opacity=".19" filter="url(#blurshadow)"/>
+<path d="M235 88C172 54 97 75 76 135c-27 75 24 164 44 236 16 60 32 98 66 88 43-14 26-145 63-145 40 0 22 129 64 145 35 13 52-34 69-99 22-83 66-156 32-226-30-60-102-70-179-46Z" fill="url(#toothFace)" stroke="#e7f6fb" stroke-width="9"/>
+<path d="M138 139c-20 58 5 130 23 175" fill="none" stroke="url(#shine)" stroke-width="29" stroke-linecap="round"/><path d="M325 116c38 23 56 78 31 149" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" opacity=".5"/>
+<path d="M154 123c49-28 84 23 134-3" stroke="#a8d6e4" stroke-width="5" opacity=".5" fill="none" stroke-linecap="round"/>
+</svg></div><div class="floating one"><span class="mini-check">✓</span><strong>Понятные объяснения</strong><small>Без лишних сложных терминов</small></div><div class="floating two"><span class="mini-check">✦</span><strong>Индивидуальный подход</strong><small>Внимание к вашим пожеланиям</small></div></div></div></section>
+<div class="trust-ribbon"><div class="container trust-layout"><div class="trust-item"><span class="symbol">⌘</span><div><strong>Внимательная консультация</strong><span>Вопросы и возможные решения</span></div></div><div class="trust-item"><span class="symbol">◎</span><div><strong>Понятный план</strong><span>Обсуждение дальнейших шагов</span></div></div><div class="trust-item"><span class="symbol">♡</span><div><strong>Уважение к вашему выбору</strong><span>Без ненужного давления</span></div></div></div></div>
+<section class="section" id="services"><div class="container"><div class="section-intro"><div><div class="kicker blue-kicker">Направления работы</div><h2>Помощь на каждом<br>этапе заботы о зубах.</h2></div><p>Ниже — примеры направлений для сайта-визитки. Окончательный перечень зависит от специализации врача.</p></div><div class="service-grid"><article class="service"><span class="service-number">01</span><h3>Консультация и осмотр</h3><p>Разбираем жалобы, обсуждаем состояние полости рта и дальнейшие шаги.</p></article><article class="service"><span class="service-number">02</span><h3>Лечение зубов</h3><p>Варианты терапевтического лечения по показаниям после очной оценки.</p></article><article class="service"><span class="service-number">03</span><h3>Профессиональная гигиена</h3><p>Профилактический уход и рекомендации по ежедневной гигиене.</p></article><article class="service"><span class="service-number">04</span><h3>Эстетическая стоматология</h3><p>Обсуждение эстетических задач и реалистичных возможностей лечения.</p></article><article class="service"><span class="service-number">05</span><h3>Профилактика</h3><p>Наблюдение и рекомендации с учётом индивидуальных особенностей.</p></article><article class="service"><span class="service-number">06</span><h3>Второе мнение</h3><p>Разъяснение предложенного плана и обсуждение возможных альтернатив.</p></article></div></div></section>
+<section class="section about-block" id="about"><div class="container about-grid"><div class="about-art photo-upload"><svg class="tooth-svg" viewBox="0 0 480 520" role="img" aria-label="Декоративная иллюстрация зуба" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="toothFace" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fff"/><stop offset=".45" stop-color="#e9f8ff"/><stop offset="1" stop-color="#b9dfea"/></linearGradient><linearGradient id="shine" x1="0" x2="1"><stop stop-color="#ffffff" stop-opacity=".95"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></linearGradient><filter id="blurshadow"><feGaussianBlur stdDeviation="15"/></filter></defs>
+<ellipse cx="248" cy="464" rx="139" ry="19" fill="#226c91" opacity=".19" filter="url(#blurshadow)"/>
+<path d="M235 88C172 54 97 75 76 135c-27 75 24 164 44 236 16 60 32 98 66 88 43-14 26-145 63-145 40 0 22 129 64 145 35 13 52-34 69-99 22-83 66-156 32-226-30-60-102-70-179-46Z" fill="url(#toothFace)" stroke="#e7f6fb" stroke-width="9"/>
+<path d="M138 139c-20 58 5 130 23 175" fill="none" stroke="url(#shine)" stroke-width="29" stroke-linecap="round"/><path d="M325 116c38 23 56 78 31 149" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" opacity=".5"/>
+<path d="M154 123c49-28 84 23 134-3" stroke="#a8d6e4" stroke-width="5" opacity=".5" fill="none" stroke-linecap="round"/>
+</svg><img class="doctor-photo" hidden alt="Фотография врача"><div class="about-caption">Здесь можно разместить фотографию врача</div></div><div class="about-text"><div class="kicker blue-kicker">Знакомство</div><h2>Врач, с которым<br>легко говорить.</h2><div class="about-name" data-doctor-name>Имя Фамилия</div><div class="about-specialty" data-specialty>Врач-стоматолог</div><p>Каждая консультация начинается с диалога. Важно понять не только клиническую картину, но и ваши ожидания, сомнения и вопросы. Решение о лечении принимается после обсуждения возможных вариантов.</p><div class="about-list"><div>✓ Обсуждаем причину обращения и варианты помощи</div><div>✓ Объясняем этапы лечения понятными словами</div><div>✓ Учитываем индивидуальную ситуацию пациента</div></div></div></div></section>
+<section class="section" id="approach"><div class="container"><div class="section-intro"><div><div class="kicker blue-kicker">Что вас ожидает</div><h2>Всё по порядку.</h2></div><p>Первый приём — возможность задать вопросы и определиться с дальнейшим планом.</p></div><div class="approach-list"><div class="step"><div class="count">ШАГ 01</div><h3>Знакомство</h3><p>Расскажите, что вас беспокоит и какой результат вы хотели бы получить.</p></div><div class="step"><div class="count">ШАГ 02</div><h3>Осмотр</h3><p>Врач оценивает ситуацию и при необходимости рекомендует дополнительную диагностику.</p></div><div class="step"><div class="count">ШАГ 03</div><h3>План</h3><p>Вместе обсуждаете подходящие варианты, последовательность и дальнейшие действия.</p></div></div></div></section>
+<section class="section contact" id="contact"><div class="container contact-grid"><div><div class="kicker">Запись и контакты</div><h2>Давайте обсудим<br>ваш вопрос.</h2><p>Оставьте контактные данные или выберите прямой способ связи. После настройки сайта здесь будут реальные контакты и адрес приёма.</p><div class="contact-info"><div><strong>Телефон</strong><a data-phone>Номер будет добавлен</a></div><div><strong>Адрес</strong><span data-address>Адрес будет указан после настройки</span></div><div><strong>График</strong><span data-hours>По предварительной записи</span></div><div><strong>Мессенджер</strong><a data-telegram>Telegram после настройки</a></div></div></div><div class="contact-form"><h3>Запрос на консультацию</h3><form id="booking-form" novalidate>
+<div class="form-grid"><div class="form-field"><label for="patient-name">Ваше имя *</label><input type="text" id="patient-name" placeholder="Как к вам обращаться" autocomplete="name" maxlength="80" required></div>
+<div class="form-field"><label for="patient-phone">Телефон *</label><input type="tel" id="patient-phone" placeholder="+7 (999) 000-00-00" autocomplete="tel" maxlength="35" required></div>
+<div class="form-field full"><label for="patient-service">Повод обращения</label><select id="patient-service"><option>Первичная консультация</option><option>Лечение зубов</option><option>Профилактика и гигиена</option><option>Эстетическая стоматология</option><option>Другой вопрос</option></select></div></div>
+<label class="privacy"><input type="checkbox" id="privacy-check" required>Подтверждаю намерение передать указанные контактные данные врачу выбранным способом связи.</label>
+<button class="button send-button" type="submit">Подготовить заявку <span class="arrow" aria-hidden="true">↗</span></button>
+<div class="demo-result" id="demo-result" role="status" aria-live="polite"></div>
+<p class="demo-note">Демонстрационная форма. Пока контакты врача не указаны, заявка никуда не отправляется. После настройки — отправка через WhatsApp или почтовую программу с подтверждением пользователя.</p>
+</form></div></div></section>
+</main><footer><div class="container foot-row"><span>© Сайт-визитка стоматолога · Концепция FORMA</span><span>Информация об услугах носит ознакомительный характер. Требуется индивидуальная консультация.</span><nav><a href="#top">Наверх ↑</a></nav></div></footer>
+<script type="application/json" id="site-config">{
+  "doctorName": "Имя Фамилия",
+  "specialty": "Врач-стоматолог",
+  "photo": "",
+  "phone": "",
+  "whatsapp": "",
+  "telegram": "",
+  "email": "",
+  "address": "",
+  "hours": ""
+}</script><script>
+(() => {
+  const config = JSON.parse(document.getElementById('site-config').textContent);
+  const clean = value => String(value || '').trim();
+  document.querySelectorAll('[data-doctor-name]').forEach(el => el.textContent = clean(config.doctorName) || 'Имя Фамилия');
+  document.querySelectorAll('[data-specialty]').forEach(el => el.textContent = clean(config.specialty) || 'Врач-стоматолог');
+  document.querySelectorAll('[data-address]').forEach(el => el.textContent = clean(config.address) || 'Адрес будет указан после настройки');
+  document.querySelectorAll('[data-hours]').forEach(el => el.textContent = clean(config.hours) || 'По предварительной записи');
+  document.querySelectorAll('[data-phone]').forEach(el => {
+    const number = clean(config.phone);
+    if (number) {el.textContent = number; el.href='tel:' + number.replace(/[^+\d]/g,'');}
+    else {el.textContent='Номер будет добавлен';el.removeAttribute('href');}
+  });
+  document.querySelectorAll('[data-telegram]').forEach(el => {
+    const username = clean(config.telegram).replace(/^@/, '');
+    if (username && /^[a-zA-Z0-9_]{5,32}$/.test(username)) {el.textContent='Написать в Telegram ↗';el.href='https://t.me/'+username;el.target='_blank';el.rel='noopener noreferrer';}
+    else {el.textContent='Telegram после настройки';el.removeAttribute('href');}
+  });
+  const photo = clean(config.photo);
+  if (photo) {
+    document.querySelectorAll('.doctor-photo').forEach(img => { img.src=photo; img.hidden=false; });
+    document.querySelectorAll('.portrait-note,.about-caption,.about-photo-hint').forEach(el => el.hidden=true);
+  }
+  const menuButton=document.getElementById('menu-button');
+  const mobileNav=document.getElementById('mobile-nav');
+  menuButton.addEventListener('click', () => {
+    const open=menuButton.getAttribute('aria-expanded')!=='true';
+    menuButton.setAttribute('aria-expanded',String(open));mobileNav.classList.toggle('is-open',open);
+  });
+  mobileNav.querySelectorAll('a').forEach(link => link.addEventListener('click',() => {mobileNav.classList.remove('is-open');menuButton.setAttribute('aria-expanded','false');}));
+  const form=document.getElementById('booking-form');
+  const result=document.getElementById('demo-result');
+  let currentMessage='';
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+    const name=document.getElementById('patient-name').value.trim();
+    const phone=document.getElementById('patient-phone').value.trim();
+    if (!name || !phone) return;
+    const service=document.getElementById('patient-service').value;
+    currentMessage=`Здравствуйте! Хочу обратиться к врачу-стоматологу.\nИмя: ${name}\nТелефон: ${phone}\nВопрос: ${service}`.replace(/\\n/g, '\n');
+    const whatsapp=clean(config.whatsapp).replace(/\D/g,'');
+    if (/^\d{10,15}$/.test(whatsapp)) {
+      window.open('https://wa.me/'+whatsapp+'?text='+encodeURIComponent(currentMessage),'_blank','noopener,noreferrer');
+      result.textContent='Сообщение подготовлено для WhatsApp. Подтвердите отправку в открывшемся приложении.';
+      result.classList.add('show');return;
+    }
+    const email=clean(config.email);
+    if (/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
+      window.location.href='mailto:'+email+'?subject='+encodeURIComponent('Запись к стоматологу')+'&body='+encodeURIComponent(currentMessage);
+      result.textContent='Письмо подготовлено. Подтвердите отправку в почтовом приложении.';
+      result.classList.add('show');return;
+    }
+    result.replaceChildren();
+    const heading=document.createElement('strong');heading.textContent='Демонстрация заявки — ничего не отправлено';
+    const text=document.createElement('div');text.textContent=currentMessage;
+    const button=document.createElement('button');button.type='button';button.textContent='Скопировать текст заявки';
+    button.addEventListener('click',async()=>{
+      try { await navigator.clipboard.writeText(currentMessage);button.textContent='Текст скопирован'; }
+      catch {button.textContent='Выделите и скопируйте текст выше';}
+    });
+    result.append(heading,document.createElement('br'),text,button);result.classList.add('show');
+  });
+})();
+</script></body></html>
